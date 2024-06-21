@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+}
+
+.sidebar {
+    border-right: solid 2px black;
+    padding-bottom: 100%;
+}
+
+.content h1 {
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.index {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.home {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+}
