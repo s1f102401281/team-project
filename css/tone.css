@@ -1,11 +1,14 @@
 body {
-    display: grid;
-    grid-template-columns: 15% 1fr;
+    display: flex;
 }
 
 .sidebar {
     border-right: solid 2px black;
-    padding-bottom: 100%;
+    padding: 0 5% 100% 0;
+}
+
+.content {
+    flex-grow: 1;
 }
 
 .content h1 {

@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 0px;
+    text-align: center;
+}
+
+.index {
+    width: 90px;
+    border-right: 5px solid black;
+    padding-right: 10px;
+    height: 110vh;
+}
+
+.home {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
