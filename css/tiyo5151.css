@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    height: 100vh;
+    height: 300vh;
     padding: 0px;
     text-align: center;
     background-color: aliceblue;
@@ -11,7 +11,7 @@
     width: 90px;
     border-right: 5px solid black;
     padding-right: 10px;
-    height: 251vh;
+    /* height: 251vh; */
     background-color: lawngreen;
     margin: 0px;
 }
@@ -42,4 +42,5 @@
 
 .photo {
     display: flex;
+    height: 200px;
 }
