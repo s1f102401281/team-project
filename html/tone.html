@@ -18,20 +18,23 @@
             <h1>透音のページ</h1>
             <ul>
                 <span onclick="add_1()" id="i_1"><li>Silentroom <s>　　　　　　　　　　　　</s> ◀</li></span>
+                <hr>
             </ul>
         </div>
         <script>
             function add_1() {
                 let ex_new = (document.getElementById("a_1") !== null);
                 if (!ex_new) {
-                    
                     let ex_el = document.getElementById("i_1");
                     let new_el = document.createElement("p");
                     new_el.textContent = "追加テキスト";
                     new_el.id = "a_1";
+                    ex_el.innerHTML = "<li>Silentroom <s>　　　　　　　　　　　　</s> ▼</li>";
                     ex_el.after(new_el);
                 } else {
-                    document.getElementById("a_1").remove()
+                    let ex_el = document.getElementById("i_1");
+                    document.getElementById("a_1").remove();
+                    ex_el.innerHTML = "<li>Silentroom <s>　　　　　　　　　　　　</s> ◀</li>";
                 }
             }
         </script>
