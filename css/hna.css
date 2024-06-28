@@ -1,8 +1,18 @@
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 0px;
+  text-align: center;
+  background-color: aliceblue;
+  margin: 0px;
+}
+
 .index {
   width: 90px;
   border-right: 5px solid black;
   padding-right: 10px;
   height: 110vh;
+  margin: 0px;
 }
 
 .ranking {
