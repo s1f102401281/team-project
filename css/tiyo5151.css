@@ -39,3 +39,7 @@
 .cozmic {
     background-color: #9b7cb6;
 }
+
+.photo {
+    display: flex;
+}
