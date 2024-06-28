@@ -1,3 +1,10 @@
+.index {
+  width: 90px;
+  border-right: 5px solid black;
+  padding-right: 10px;
+  height: 110vh;
+}
+
 .ranking {
     counter-reset: rank;
   }
@@ -14,7 +21,7 @@
     content: "";
     position: absolute;
     border-bottom: 100px solid transparent;
-    border-left: 100px solid rgba(0,0,0,0.8);
+    border-left: 100px solid rgba(174, 96, 242, 0.325);
   }
    
   .ranking li::after {
@@ -39,6 +46,11 @@
     width: 350px;
     padding: 3px;
     color: #fff;
-    background: rgba(0,0,0,0.8);
+    background: rgba(174, 96, 242, 0.325);
     text-align: right;
+
+  }
+
+  .live {
+    color: aquamarine;
   }
