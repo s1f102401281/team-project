@@ -1,46 +1,99 @@
-.container {
+:root {
+    --color-bg: aliceblue;
+    --color-border: black;
+    --color-nav: lawngreen;
+    --color-mstr: #ff9500;
+    --color-tyatto: #009bbf;
+    --color-rip: #00bb85;
+    --color-cozmic: #9b7cb6;
+    --font-main: Arial, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    background-color: var(--color-bg);
+  }
+  
+  .container {
     display: flex;
-    height: 300vh;
-    padding: 0px;
-    text-align: center;
-    background-color: aliceblue;
-    margin: 0px;
-}
-
-.index {
-    width: 90px;
-    border-right: 5px solid black;
-    padding-right: 10px;
-    /* height: 251vh; */
-    background-color: lawngreen;
-    margin: 0px;
-}
-
-.home {
+    min-height: 100vh;
+    background-color: var(--color-bg);
+  }
+  
+  .index {
+    width: 120px;
+    border-right: 2px solid var(--color-border);
+    padding: 20px 10px;
+    background-color: var(--color-nav);
+  }
+  
+  .index a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--color-border);
+  }
+  
+  .home {
     flex-grow: 1;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .mstr { background-color: var(--color-mstr); }
+  .tyatto { background-color: var(--color-tyatto); }
+  .RIP { background-color: var(--color-rip); }
+  .cozmic { background-color: var(--color-cozmic); }
+  
+  .photo {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0px;
-}
-
-.mstr {
-    background-color: #ff9500;
-}
-
-.tyatto {
-    background-color: #009bbf;
-}
-
-.RIP {
-    background-color: #00bb85;
-}
-
-.cozmic {
-    background-color: #9b7cb6;
-}
-
-.photo {
-    display: flex;
-    height: 200px;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  ol {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .index {
+      width: 100%;
+      border-right: none;
+      border-bottom: 2px solid var(--color-border);
+    }
+  
+    .index a {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
