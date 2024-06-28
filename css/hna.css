@@ -17,24 +17,20 @@
 
 .ranking {
     counter-reset: rank;
-  }
-   
-  .ranking li {
-    position: relative;
-  }
-   
+}
+
 .ranking li:not(:last-child) {
     margin-bottom: 10px;
-  }
+}
    
-  .ranking li::before {
+.ranking li::before {
     content: "";
     position: absolute;
     border-bottom: 100px solid transparent;
     border-left: 100px solid rgba(174, 96, 242, 0.325);
-  }
+}
    
-  .ranking li::after {
+.ranking li::after {
     counter-increment: rank;
     content: counter(rank) " 位";
     position: absolute;
@@ -42,15 +38,19 @@
     left: 10px;
     font-size: 1.2em;
     color: #fff;
-  }
+}
+
+.ranking li {
+  position: relative;
+}
    
-  .ranking img {
+.ranking img {
     width: 350px;
     height: 200px;
     object-fit: cover;
-  }
+}
    
-  .ranking p { 
+.ranking p { 
     position: absolute;
     bottom: 0;
     width: 350px;
@@ -59,8 +59,8 @@
     background: rgba(174, 96, 242, 0.325);
     text-align: right;
 
-  }
+}
 
-  .live {
+.live {
     color: aquamarine;
-  }
+}

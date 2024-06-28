@@ -1,5 +1,6 @@
 body {
     display: flex;
+    min-width: 480px;
 }
 
 .sidebar {
@@ -13,4 +14,8 @@ body {
 
 .content h1 {
     text-align: center;
+}
+
+.content li {
+    user-select: none;
 }
